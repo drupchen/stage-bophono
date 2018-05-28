@@ -30,4 +30,7 @@ options = {
 converter = UnicodeToApi(schema="CAT", options = options) # try with CAT for Amdokä
 
 for syl in dictee:
-    print(converter.get_api(syl))
+    api = converter.get_api(syl)
+    zhuyin = api2chinese(api)
+    print(api, zhuyin)
+
