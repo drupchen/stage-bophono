@@ -32,5 +32,6 @@ converter = UnicodeToApi(schema="CAT", options = options) # try with CAT for Amd
 for syl in dictee:
     api = converter.get_api(syl)
     zhuyin = api2chinese(api)
-    print(api, zhuyin)
+    print(api)
+    # print(zhuyin)
 
